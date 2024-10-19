@@ -62,3 +62,5 @@ getgenv().reflexPRO = {
         }
     }
 }
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/azteekk/reflex.pro/refs/heads/main/obfs"))()
