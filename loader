@@ -1,0 +1,64 @@
+--[[
+
+
+
+                      ______   __                                                       
+                     /      \ |  \                                                      
+  ______    ______  |  $$$$$$\| $$  ______   __    __       ______    ______    ______  
+ /      \  /      \ | $$_  \$$| $$ /      \ |  \  /  \     /      \  /      \  /      \ 
+|  $$$$$$\|  $$$$$$\| $$ \    | $$|  $$$$$$\ \$$\/  $$    |  $$$$$$\|  $$$$$$\|  $$$$$$\
+| $$   \$$| $$    $$| $$$$    | $$| $$    $$  >$$  $$     | $$  | $$| $$   \$$| $$  | $$
+| $$      | $$$$$$$$| $$      | $$| $$$$$$$$ /  $$$$\  __ | $$__/ $$| $$      | $$__/ $$
+| $$       \$$     \| $$      | $$ \$$     \|  $$ \$$\|  \| $$    $$| $$       \$$    $$
+ \$$        \$$$$$$$ \$$       \$$  \$$$$$$$ \$$   \$$ \$$| $$$$$$$  \$$        \$$$$$$ 
+                                                          | $$                          
+                                                          | $$                          
+                                                           \$$                          
+
+
+
+made by azt3kk
+
+]]
+
+getgenv().reflexPRO = {
+    General = {
+        Enabled = true,
+        Mode = "Camera", -- "Camera", "Mouse"
+        BodyPart = "HumanoidRootPart"
+    },
+    Bind = {
+        KeyType = "KeyBoard", -- "KeyBoard", "Mouse"
+        KeyMode = "Toggle", -- "Toggle", "Hold"
+        Key = "C" -- A-Z for "KeyBoard" KeyType; "MouseButton1", "MouseButton2", "MouseButton3" for "Mouse" KeyType
+    },
+    Predction = {
+        Enabled = true,
+        Calculation = 0.001 -- pred = Velocity * Ping * Calculation
+    },
+    Smoothness = { -- Wont work with mouse method
+        Enabled = false,
+        Value = 0.02
+    },
+    Checks = {
+        TypingCheck = true, -- Wont trigger bind when typing
+        HealthCheck = true, -- Wont target on dead players
+    },
+    Misc = {
+        UntargetWhenTargetDies = false,
+        Fov = {
+            Enabled = true,
+            Value = 150
+        },
+        Resolver = {
+            Enabled = false,
+            Method = "RecalcVelocity" -- "MoveDirection", "RecalcVelocity"
+        },
+        Shake = {
+            Enabled = false,
+            X = 0,
+            Y = 0,
+            Z = 0
+        }
+    }
+}
