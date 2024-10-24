@@ -31,15 +31,15 @@ getgenv().reflexPRO = {
     Bind = {
         KeyType = "KeyBoard", -- "KeyBoard", "Mouse"
         KeyMode = "Hold", -- "Toggle", "Hold"
-        Key = "U" -- A-Z for "KeyBoard" KeyType; "MouseButton1", "MouseButton2", "MouseButton3" for "Mouse" KeyType
+        Key = "C" -- A-Z for "KeyBoard" KeyType; "MouseButton1", "MouseButton2", "MouseButton3" for "Mouse" KeyType
     },
     Predction = {
         Enabled = false,
         Calculation = 0.001 -- pred = Velocity * Ping * Calculation
     },
     Smoothness = {
-        Enabled = true,
-        Value = 0.05,
+        Enabled = false,
+        Value = 0.7,
     },
     Checks = {
         TypingCheck = true, -- Wont shooting and target/untarget when typing
