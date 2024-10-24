@@ -21,38 +21,39 @@ made by azt3kk
 
 ]]
 
+
 getgenv().reflexPRO = {
     General = {
         Enabled = true,
-        Mode = "Camera", -- "Camera", "Mouse"
-        BodyPart = "HumanoidRootPart"
+        Mode = "Mouse", -- "Camera", "Mouse", "Dual"
+        BodyPart = "Head"
     },
     Bind = {
         KeyType = "KeyBoard", -- "KeyBoard", "Mouse"
-        KeyMode = "Toggle", -- "Toggle", "Hold"
-        Key = "C" -- A-Z for "KeyBoard" KeyType; "MouseButton1", "MouseButton2", "MouseButton3" for "Mouse" KeyType
+        KeyMode = "Hold", -- "Toggle", "Hold"
+        Key = "U" -- A-Z for "KeyBoard" KeyType; "MouseButton1", "MouseButton2", "MouseButton3" for "Mouse" KeyType
     },
     Predction = {
-        Enabled = true,
+        Enabled = false,
         Calculation = 0.001 -- pred = Velocity * Ping * Calculation
     },
-    Smoothness = { -- Wont work with mouse method
-        Enabled = false,
-        Value = 0.02
+    Smoothness = {
+        Enabled = true,
+        Value = 0.05,
     },
     Checks = {
-        TypingCheck = true, -- Wont trigger bind when typing
+        TypingCheck = true, -- Wont shooting and target/untarget when typing
         HealthCheck = true, -- Wont target on dead players
     },
     Misc = {
-        UntargetWhenTargetDies = false,
+        UntargetWhenTargetDies = true,
         Fov = {
             Enabled = true,
             Value = 150
         },
         Resolver = {
             Enabled = false,
-            Method = "RecalcVelocity" -- "MoveDirection", "RecalcVelocity"
+            Method = "RecalcVelocityY" -- "MoveDirection", "RecalcVelocityY", "RecalcVelocity"
         },
         Shake = {
             Enabled = false,
